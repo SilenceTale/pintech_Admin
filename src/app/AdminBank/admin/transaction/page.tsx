@@ -1,5 +1,5 @@
-const LoginPage = () => {
-  return <h1>로그인</h1>
+const AdminBankTransaction = () => {
+  return <h1>거래 내역 단일 조회</h1>
 }
 
-export default LoginPage
+export default AdminBankTransaction

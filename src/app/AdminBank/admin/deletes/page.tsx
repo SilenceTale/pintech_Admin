@@ -1,5 +1,5 @@
-const LoginPage = () => {
-  return <h1>로그인</h1>
+const AdminBankDeletes = () => {
+  return <h1>계좌 단일/목록 일괄 삭제 페이지</h1>
 }
 
-export default LoginPage
+export default AdminBankDeletes
