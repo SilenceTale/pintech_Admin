@@ -4,44 +4,62 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { styled } from 'styled-components'
 import { SlLogin, SlLogout } from 'react-icons/sl'
-import { FaUserPlus, FaHome, FaSearch } from 'react-icons/fa'
-import { MdContactPage } from 'react-icons/md'
+import { FaUserPlus, FaHome } from 'react-icons/fa'
+import classNames from 'classnames'
 import colors from '../../styles/colors'
 import sizes from '../../styles/sizes'
 import logo from '../../assets/images/logo.png'
 import useUser from '../../hooks/useUser'
 
-const { white, primary, light, dark } = colors
-const { medium, big } = sizes
+const { light } = colors
+const { big } = sizes
 
-const StyledMenu = styled.nav`
-  background: ${primary};
+const StyledHeader = styled.header`
+  &.line {
+    border-bottom: 1px solid ${light};
+  }
 
-  .layout-width {
-    display: flex;
-    height: 50px;
+  .site-top {
+    background: ${light};
+    height: 45px;
 
-    a {
-      color: ${light};
-      font-size: ${medium};
-      padding: 0 40px;
-      line-height: 50px;
+    .layout-width {
+      display: flex;
+      justify-content: space-between;
 
-      &:hover,
-      &.on {
-        background: ${dark};
+      & > div {
+        display: flex;
+        align-items: center;
+        height: 45px;
+
+        a + a {
+          margin-left: 10px;
+        }
       }
+
+      svg {
+        font-size: ${big};
+      }
+    }
+  }
+
+  .logo-search {
+    .layout-width {
+      display: flex;
+      justify-content: space-between;
+      height: 100px;
+      align-items: center;
     }
   }
 `
 
 const Header = () => {
-  const { userInfo, isLogin } = useUser()
+  const { userInfo, isLogin, isAdmin } = useUser()
   const email = userInfo?.email
   const name = userInfo?.name
 
   return (
-    <StyledHeader>
+    <StyledHeader className={classNames({ line: isAdmin })}>
       <div className="site-top">
         <div className="layout-width">
           <div className="left">

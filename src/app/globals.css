@@ -45,5 +45,14 @@ dd {
 }
 
 .main-content {
-  min-height: 600px;
+  display: flex;
+}
+
+.main-content > aside {
+  width: 220px;
+}
+
+.main-content > section {
+  flex-grow: 1;
+  padding: 50px;
 }

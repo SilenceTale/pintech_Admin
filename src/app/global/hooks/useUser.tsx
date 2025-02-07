@@ -1,6 +1,6 @@
 'use client'
 import { useContext } from 'react'
-import UserContext from '../contexts/UserContexts'
+import UserContext from '../contexts/UserContext'
 
 export default function useUser() {
   const {

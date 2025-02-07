@@ -3,7 +3,7 @@ import useUser from '../hooks/useUser'
 import LoginContainer from '@/app/member/containers/LoginContainer'
 import { MainContentBox } from '../components/ContentBox'
 import { MainTitle } from '../components/StyledTitle'
-import { redirect, usePathname, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { unauthorized } from 'next/navigation'
 
 export default function WithUserContainer(UserContainer) {
@@ -14,10 +14,8 @@ export default function WithUserContainer(UserContainer) {
   const redirectUrl = `${pathname}?${searchParams}`
 
   if (isLogin && !isAdmin) {
-    return unauthorized()
+    unauthorized()
   }
-
-  console.log('redirectUrl', redirectUrl)
 
   return isLogin ? (
     <UserContainer />

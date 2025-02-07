@@ -17,10 +17,6 @@
     "react-datepicker": "^8.0.0",
     "react-dom": "^19.0.0",
     "react-helmet-async": "^2.0.5",
-<<<<<<< HEAD
-=======
-    "react-icon": "^1.0.0",
->>>>>>> ae515f56be907a96b51d8867e7841459b549eb10
     "react-icons": "^5.4.0",
     "sass": "^1.84.0",
     "styled-components": "^6.1.15"
