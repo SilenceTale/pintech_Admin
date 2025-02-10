@@ -82,12 +82,21 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
           <tr>
             <th>게시판 ID</th>
             <td>
-              <Input
-                type="text"
-                name="bid"
-                value={form?.bid ?? ''}
-                onChange={onChange}
-              />
+              {form?.mode === 'edit' ? (
+                <>
+                  {form?.bid}
+                  <input type="hidden" name="bid" value={form?.bid ?? ''} />
+                </>
+              ) : (
+                <>
+                  <Input
+                    type="text"
+                    name="bid"
+                    value={form?.bid ?? ''}
+                    onChange={onChange}
+                  />
+                </>
+              )}
               <Messages color="danger">{errors?.bid}</Messages>
             </td>
           </tr>
@@ -356,7 +365,7 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
           </tr>
 
           <tr>
-            <th>글 보기 접근 권한</th>
+            <th>글보기 접근 권한</th>
             <td>
               <span onClick={() => onClick('viewAuthority', 'ALL')}>
                 {form?.viewAuthority === 'ALL' ? (
@@ -386,7 +395,7 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
           </tr>
 
           <tr>
-            <th>글 쓰기 권한</th>
+            <th>글쓰기 권한</th>
             <td>
               <span onClick={() => onClick('writeAuthority', 'ALL')}>
                 {form?.writeAuthority === 'ALL' ? (
@@ -416,7 +425,7 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
           </tr>
 
           <tr>
-            <th>댓글 작성 권한한</th>
+            <th>댓글 작성권한</th>
             <td>
               <span onClick={() => onClick('commentAuthority', 'ALL')}>
                 {form?.commentAuthority === 'ALL' ? (
