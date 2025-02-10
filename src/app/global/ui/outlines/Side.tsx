@@ -39,7 +39,10 @@ const Side = () => {
 
   return (
     <StyledMenus>
-      <a href="/member" className={classNames({ on: menuCode === 'member' })}>
+      <a
+        href="/member/config/list"
+        className={classNames({ on: menuCode === 'member' })}
+      >
         회원관리
       </a>
       <a
