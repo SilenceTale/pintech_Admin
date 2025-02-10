@@ -26,6 +26,7 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
 
   return (
     <StyledForm action={formAction} autoComplete="off">
+      <input type="hidden" name="mode" value={form?.mode ?? 'add'} />
       <input type="hidden" name="open" value={form?.open ?? false} />
       <input type="hidden" name="useEditor" value={form?.useEditor ?? false} />
       <input
@@ -270,9 +271,9 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
 
               <span onClick={() => onClick('locationAfterWriting', 'view')}>
                 {form?.locationAfterWriting === 'view' ? (
-                  <MdRadioButtonUnchecked />
-                ) : (
                   <MdRadioButtonChecked />
+                ) : (
+                  <MdRadioButtonUnchecked />
                 )}
                 글 보기
               </span>
@@ -292,9 +293,9 @@ const ConfigForm = ({ form, onChange, onClick, actionState }) => {
 
               <span onClick={() => onClick('skin', 'gallery')}>
                 {form?.skin === 'gallery' ? (
-                  <MdRadioButtonUnchecked />
-                ) : (
                   <MdRadioButtonChecked />
+                ) : (
+                  <MdRadioButtonUnchecked />
                 )}
                 갤러리(gallery)
               </span>
