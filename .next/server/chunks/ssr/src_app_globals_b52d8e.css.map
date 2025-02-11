@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/globals.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');\n* {\n  font-family: 'Nanum Gothic', serif;\n  box-sizing: border-box;\n  outline: none;\n}\n\nhtml {\n  font-size: 13px;\n  color: #000;\n}\n\nbody {\n  margin: 0;\n}\n\na {\n  text-decoration: none;\n  color: #000;\n}\n\nimg {\n  border: 0;\n}\n\nul,\nol {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\nli,\ndl,\ndt,\ndd {\n  margin: 0;\n  padding: 0;\n}\n\n/* 공통 */\n.layout-width {\n  min-width: 1300px;\n  padding: 0 10px;\n}\n\n.main-content {\n  display: flex;\n}\n\n.main-content > aside {\n  width: 220px;\n}\n\n.main-content > section {\n  flex-grow: 1;\n  padding: 50px;\n}"],"names":[],"mappings":"AACA;;;;;;AAMA;;;;;AAKA;;;;AAIA;;;;;AAKA;;;;AAIA;;;;;;AAOA;;;;;AASA;;;;;AAKA;;;;AAIA;;;;AAIA"}},
+    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

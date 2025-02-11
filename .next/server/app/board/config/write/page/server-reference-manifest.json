@@ -1,0 +1,49 @@
+{
+  "node": {
+    "70427976dec8c984d0bc0d7c2d3534b3fd58aa9b53": {
+      "workers": {
+        "app/board/config/write/page": {
+          "moduleId": "[project]/.next-internal/server/app/board/config/write/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/global/libs/apiRequest.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/member/services/actions.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/board/config/write/page": "rsc"
+      }
+    },
+    "7f021c829abdcf5d2a67f586c92552eeae1c209e9c": {
+      "workers": {
+        "app/board/config/write/page": {
+          "moduleId": "[project]/.next-internal/server/app/board/config/write/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/global/libs/apiRequest.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/member/services/actions.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/board/config/write/page": "action-browser"
+      }
+    },
+    "7fa2d99b3f7bab42bd03a70f4740ab973e59954414": {
+      "workers": {
+        "app/board/config/write/page": {
+          "moduleId": "[project]/.next-internal/server/app/board/config/write/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/global/libs/apiRequest.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/member/services/actions.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/board/config/write/page": "action-browser"
+      }
+    },
+    "7fc052efd278b6288c162629c44ced0b4d955d8b38": {
+      "workers": {
+        "app/board/config/write/page": {
+          "moduleId": "[project]/.next-internal/server/app/board/config/write/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/global/libs/apiRequest.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/member/services/actions.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/board/config/write/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

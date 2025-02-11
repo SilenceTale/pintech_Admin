@@ -1,0 +1,7 @@
+{
+  "/board/config/write/page": "app/board/config/write/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/member/config/list/page": "app/member/config/list/page.js",
+  "/page": "app/page.js",
+  "/board/config/list/page": "app/board/config/list/page.js"
+}
