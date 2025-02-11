@@ -4,7 +4,7 @@ import MemberList from '../components/MemberList'
 import useMenuCode from '@/app/global/hooks/useMenuCode'
 
 const MemberListContainer = () => {
-  useMenuCode('member', 'configlist')
+  useMenuCode('member', 'configList')
 
   return <MemberList />
 }
